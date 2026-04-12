@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+
+    printf("Menu:\n");
+    printf("1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    int a = 10, b = 5;
+
+    switch(choice) {
+        case 1:
+            printf("Addition = %d\n", a + b);
+            break;
+        case 2:
+            printf("Subtraction = %d\n", a - b);
+            break;
+        case 3:
+            printf("Multiplication = %d\n", a * b);
+            break;
+        case 4:
+            printf("Division = %d\n", a / b);
+            break;
+        default:
+            printf("Invalid choice\n");
+    }
+
+    return 0;
+}
